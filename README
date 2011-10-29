@@ -1,0 +1,9 @@
+Monitoring Is Not Evil
+
+A project to log audio volume during a long time.
+
+You can find source code for the arduino part in src/arduino/
+In data/ you'll find some tests.
+Some references and discussions are available on a wave : https://wave.google.com/wave/waveref/googlewave.com/w+i34npl2sA
+
+
