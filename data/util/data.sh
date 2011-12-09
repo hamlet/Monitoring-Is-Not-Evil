@@ -1,4 +1,5 @@
 #!/bin/sh
+sh prep.sh
 
 cat /dev/ttyUSB0 | sed -n -e '/%\(.*\)% |\(.*\)|/P' | sed -e 's/%\(.*\)% |\(.*\)|/\1 \2/' > data &
 pid=$!

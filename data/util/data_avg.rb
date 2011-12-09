@@ -35,6 +35,4 @@ while a = gets
     values << m[2].to_i
   }
 end
-puts "Number of samples", values.length, "Average", values.average, "Deviation", values.standard_deviation, "Variance", values.sample_variance, "Errors timing", errors_timing, "Errors overflow", errors_overflow
-
-
+puts "Number of samples", values.length, "Average", values.average, "Deviation", values.standard_deviation, "Variance", values.sample_variance, "Errors timing %", errors_timing.to_f / values.length*100, "Errors overflow %", errors_overflow.to_f / values.length*100
