@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPCB (2011-07-08)-stable date = jeu. 22 déc. 2011 00:24:17 CET
+Cmp-Mod V01 Created by CvPCB (2011-07-08)-stable date = jeu. 22 déc. 2011 14:53:41 CET
 
 BeginCmp
 TimeStamp = /4EF1F01B;
@@ -67,7 +67,7 @@ BeginCmp
 TimeStamp = /4EF1EFBA;
 Reference = U1;
 ValeurCmp = LM358N;
-IdModule  = MSOP_8;
+IdModule  = DIP-8__300;
 EndCmp
 
 EndListe

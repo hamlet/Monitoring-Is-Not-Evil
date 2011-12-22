@@ -1,4 +1,4 @@
-# EESchema Netlist Version 1.1 created  jeu. 22 déc. 2011 00:24:17 CET
+# EESchema Netlist Version 1.1 created  jeu. 22 déc. 2011 14:53:41 CET
 (
  ( /4EF1F01B C1V7 C1 10µF
   ( 1 N-000009 )
@@ -40,7 +40,7 @@
   ( 1 N-000002 )
   ( 2 N-000008 )
  )
- ( /4EF1EFBA MSOP_8 U1 LM358N
+ ( /4EF1EFBA DIP-8__300 U1 LM358N
   ( 1 N-000002 )
   ( 2 N-000008 )
   ( 3 N-000009 )
