@@ -1,0 +1,20 @@
+EESchema-LIBRARY Version 2.3  Date: mer. 21 déc. 2011 18:14:05 CET
+#encoding utf-8
+#
+# JeePort
+#
+DEF JeePort P 0 0 N Y 1 F N
+F0 "P" -50 0 60 V V C CNN
+F1 "JeePort" 50 0 60 V V C CNN
+DRAW
+S -100 300 100 -300 0 1 0 N
+X PWR 1 -350 250 250 R 60 60 1 1 P I
+X DIO 2 -350 150 250 R 60 60 1 1 P I
+X GND 3 -350 50 250 R 60 60 1 1 P I
+X 3.3V 4 -350 -50 250 R 60 60 1 1 P I
+X AIO 5 -350 -150 250 R 60 60 1 1 P I
+X IRQ 6 -350 -250 250 R 60 60 1 1 P I
+ENDDRAW
+ENDDEF
+#
+#End Library

@@ -1,0 +1,94 @@
+# EESchema Netlist Version 1.1 created  jeu. 22 déc. 2011 00:24:17 CET
+(
+ ( /4EF1F01B C1V7 C1 10µF
+  ( 1 N-000009 )
+  ( 2 N-000011 )
+ )
+ ( /4EF1EF27 ELECTRET MIC1 ELECTRET
+  ( 1 GND )
+  ( 2 N-000011 )
+ )
+ ( /4EF21430 SIL-6 P1 JEEPORT
+  ( 1 N-000003 )
+  ( 2 ? )
+  ( 3 GND )
+  ( 4 N-000005 )
+  ( 5 N-000010 )
+  ( 6 ? )
+ )
+ ( /4EF1F07D R3 R1 1k
+  ( 1 N-000005 )
+  ( 2 N-000007 )
+ )
+ ( /4EF1F07A R3 R2 1k
+  ( 1 N-000007 )
+  ( 2 N-000011 )
+ )
+ ( /4EF1F070 R3 R3 10k
+  ( 1 N-000009 )
+  ( 2 GND )
+ )
+ ( /4EF1F073 R3 R4 0.1k
+  ( 1 N-000008 )
+  ( 2 GND )
+ )
+ ( /4EF1F076 R3 R5 10k
+  ( 1 N-000010 )
+  ( 2 N-000002 )
+ )
+ ( /4EF1F08F RV2X4 RVAR1 100k
+  ( 1 N-000002 )
+  ( 2 N-000008 )
+ )
+ ( /4EF1EFBA MSOP_8 U1 LM358N
+  ( 1 N-000002 )
+  ( 2 N-000008 )
+  ( 3 N-000009 )
+  ( 4 GND )
+  ( 8 N-000003 )
+ )
+)
+*
+{ Allowed footprints by component:
+$component C1
+ SM*
+ C?
+ C1-1
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R4
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R5
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$endfootprintlist
+}
