@@ -1,11 +1,14 @@
 #!/bin/sh
 sh prep.sh
+sleep 2
 
-cat /dev/ttyUSB0 | tee data.all | sed -n -e '/%\(.*\)% |\(.*\)|/P' | sed -e 's/%\(.*\)% |\(.*\)|/\1 \2/' > data &
+echo starting 
+cat /dev/ttyUSB0 > data.all &
 pid=$!
 sleep $1
 kill $pid
 
+cat data.all | sed -n -e '/%\(.*\)% |\(.*\)|/P' | sed -e 's/%\(.*\)% |\(.*\)|/\1 \2/' > data
 grep \+\+ data.all | sed -e 's/++\(.*\)+ ~\(.*\)~ |\(.*\)|/\1 \2 \3/' > data.avg
 
 gnuplot -p data.plot 
