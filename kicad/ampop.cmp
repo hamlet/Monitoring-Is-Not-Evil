@@ -1,10 +1,10 @@
-Cmp-Mod V01 Created by CvPCB (2011-07-08)-stable date = jeu. 22 déc. 2011 00:24:17 CET
+Cmp-Mod V01 Created by CvPCB (2011-07-08)-stable date = jeu. 12 janv. 2012 00:02:05 CET
 
 BeginCmp
 TimeStamp = /4EF1F01B;
 Reference = C1;
 ValeurCmp = 10µF;
-IdModule  = C1V7;
+IdModule  = C1V5;
 EndCmp
 
 BeginCmp
@@ -22,16 +22,16 @@ IdModule  = SIL-6;
 EndCmp
 
 BeginCmp
-TimeStamp = /4EF1F07D;
+TimeStamp = /4EF1F07A;
 Reference = R1;
-ValeurCmp = 1k;
+ValeurCmp = 10k;
 IdModule  = R3;
 EndCmp
 
 BeginCmp
-TimeStamp = /4EF1F07A;
+TimeStamp = /4EF1F076;
 Reference = R2;
-ValeurCmp = 1k;
+ValeurCmp = 10k;
 IdModule  = R3;
 EndCmp
 
@@ -50,24 +50,17 @@ IdModule  = R3;
 EndCmp
 
 BeginCmp
-TimeStamp = /4EF1F076;
+TimeStamp = /4F0E12C0;
 Reference = R5;
-ValeurCmp = 10k;
+ValeurCmp = 68k;
 IdModule  = R3;
-EndCmp
-
-BeginCmp
-TimeStamp = /4EF1F08F;
-Reference = RVAR1;
-ValeurCmp = 100k;
-IdModule  = RV2X4;
 EndCmp
 
 BeginCmp
 TimeStamp = /4EF1EFBA;
 Reference = U1;
 ValeurCmp = LM358N;
-IdModule  = MSOP_8;
+IdModule  = DIP-8__300;
 EndCmp
 
 EndListe
