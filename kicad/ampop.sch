@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date mer. 21 déc. 2011 18:20:43 CET
+EESchema Schematic File Version 2  date mer. 11 janv. 2012 23:56:44 CET
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -38,7 +38,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 1
 Title "First set-up for electret mic, using ampli-op"
-Date "21 dec 2011"
+Date "11 jan 2012"
 Rev "1"
 Comp ""
 Comment1 "Electret part from http://www.arduino.cc/cgi-bin/yabb2/YaBB.pl?num=1263440809"
@@ -46,6 +46,71 @@ Comment2 "Ampli-op part from LM358 datasheet, first example"
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L R R5
+U 1 1 4F0E12C0
+P 4700 3800
+F 0 "R5" V 4780 3800 50  0000 C CNN
+F 1 "68k" V 4700 3800 50  0000 C CNN
+	1    4700 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 2400 2900 1900
+Wire Wire Line
+	4100 1850 4100 1900
+Wire Wire Line
+	4100 1900 2900 1900
+Wire Wire Line
+	4100 1550 3850 1550
+Wire Wire Line
+	3850 1550 3850 2850
+Wire Wire Line
+	3850 2850 5100 2850
+Wire Wire Line
+	5700 2900 5700 4050
+Wire Wire Line
+	4400 4050 4400 4300
+Wire Wire Line
+	5100 3650 5100 4300
+Wire Wire Line
+	4400 3550 4700 3550
+Connection ~ 5700 3250
+Wire Wire Line
+	5700 4050 4700 4050
+Connection ~ 4100 3150
+Wire Wire Line
+	4100 3550 4100 3150
+Wire Wire Line
+	4100 1950 4000 1950
+Wire Wire Line
+	5700 2400 5700 2250
+Wire Wire Line
+	4700 3150 3800 3150
+Wire Wire Line
+	3400 3150 2900 3150
+Wire Wire Line
+	2900 3550 2900 2900
+Wire Wire Line
+	2900 4450 2900 3900
+Connection ~ 2900 3150
+Connection ~ 2900 4300
+Wire Wire Line
+	4700 3550 4700 3350
+Wire Wire Line
+	4100 4300 4100 4050
+Connection ~ 4100 4300
+Wire Wire Line
+	5100 4300 2900 4300
+Connection ~ 4400 4300
+Wire Wire Line
+	4000 1950 4000 2250
+Wire Wire Line
+	4000 2250 5700 2250
+Wire Wire Line
+	3950 1800 3950 1750
+Wire Wire Line
+	3950 1750 4100 1750
 $Comp
 L PWR_FLAG #FLG01
 U 1 1 4EF21551
@@ -64,60 +129,6 @@ F 1 "PWR_FLAG" H 3850 1730 30  0000 C CNN
 	1    3850 1550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4100 1750 3950 1750
-Wire Wire Line
-	3950 1750 3950 1800
-Wire Wire Line
-	4000 2250 5700 2250
-Wire Wire Line
-	4000 2250 4000 1950
-Connection ~ 4400 4300
-Wire Wire Line
-	2900 4300 5100 4300
-Connection ~ 4100 4300
-Wire Wire Line
-	4100 4300 4100 4050
-Wire Wire Line
-	4700 3350 4700 3550
-Connection ~ 2900 4300
-Connection ~ 2900 3150
-Wire Wire Line
-	2900 3900 2900 4850
-Wire Wire Line
-	2900 2900 2900 3550
-Wire Wire Line
-	3400 3150 2900 3150
-Wire Wire Line
-	3800 3150 4700 3150
-Wire Wire Line
-	5700 2250 5700 2400
-Wire Wire Line
-	4000 1950 4100 1950
-Wire Wire Line
-	4100 3550 4100 3150
-Connection ~ 4100 3150
-Wire Wire Line
-	4700 4050 5700 4050
-Connection ~ 5700 3250
-Wire Wire Line
-	4700 3550 4400 3550
-Wire Wire Line
-	5100 4300 5100 3650
-Wire Wire Line
-	4400 4050 4400 4300
-Wire Wire Line
-	5700 4050 5700 2900
-Wire Wire Line
-	5100 2850 3850 2850
-Wire Wire Line
-	3850 2850 3850 1550
-Wire Wire Line
-	3850 1550 4100 1550
-Wire Wire Line
-	2900 1900 4100 1900
-Wire Wire Line
-	4100 1900 4100 1850
 $Comp
 L JEEPORT P1
 U 1 1 4EF21430
@@ -148,37 +159,19 @@ F 1 "LM358N" H 5150 3000 60  0000 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L RVAR RVAR1
-U 1 1 4EF1F08F
-P 4700 3800
-F 0 "RVAR1" V 4780 3750 50  0000 C CNN
-F 1 "100k" V 4620 3860 50  0000 C CNN
-	1    4700 3800
-	-1   0    0    1   
-$EndComp
-$Comp
 L R R1
-U 1 1 4EF1F07D
-P 2900 2150
-F 0 "R1" V 2980 2150 50  0000 C CNN
-F 1 "1k" V 2900 2150 50  0000 C CNN
-	1    2900 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R2
 U 1 1 4EF1F07A
 P 2900 2650
-F 0 "R2" V 2980 2650 50  0000 C CNN
-F 1 "1k" V 2900 2650 50  0000 C CNN
+F 0 "R1" V 2980 2650 50  0000 C CNN
+F 1 "10k" V 2900 2650 50  0000 C CNN
 	1    2900 2650
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R5
+L R R2
 U 1 1 4EF1F076
 P 5700 2650
-F 0 "R5" V 5780 2650 50  0000 C CNN
+F 0 "R2" V 5780 2650 50  0000 C CNN
 F 1 "10k" V 5700 2650 50  0000 C CNN
 	1    5700 2650
 	1    0    0    -1  
@@ -222,10 +215,10 @@ $EndComp
 $Comp
 L GND #PWR04
 U 1 1 4EF1E149
-P 2900 4850
-F 0 "#PWR04" H 2900 4850 30  0001 C CNN
-F 1 "GND" H 2900 4780 30  0001 C CNN
-	1    2900 4850
+P 2900 4450
+F 0 "#PWR04" H 2900 4450 30  0001 C CNN
+F 1 "GND" H 2900 4380 30  0001 C CNN
+	1    2900 4450
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
