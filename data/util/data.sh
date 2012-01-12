@@ -3,6 +3,7 @@ sh prep.sh
 sleep 2
 
 echo starting 
+[ -n $3 ] && sh mus.sh $3 &
 cat /dev/ttyUSB0 > data.all &
 pid=$!
 sleep $1
